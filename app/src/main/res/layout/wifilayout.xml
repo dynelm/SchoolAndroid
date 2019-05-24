@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="408dp"
+        android:layout_marginTop="297dp"
+        android:text="请先去设置打开wifi，并且连接“Dart-ROBOT_plus”这个无线网，然后开启程序即可。若遇无线网打不开的情况，请重启机器。"
+        android:textSize="25sp"/>
+
+</RelativeLayout>

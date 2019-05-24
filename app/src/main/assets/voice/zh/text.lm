@@ -1,0 +1,69 @@
+Language model created by QuickLM on Tue Oct 31 21:26:39 EDT 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 11 sentences and 13 words
+
+\data\
+ngram 1=13
+ngram 2=22
+ngram 3=11
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.8195 背首诗 -0.2218
+-1.8195 哈罗 -0.2218
+-1.8195 讲个笑话 -0.2218
+-1.8195 你好 -0.2218
+-1.8195 你是谁 -0.2218
+-1.8195 天气怎么样 -0.2218
+-1.8195 往前走 -0.2218
+-1.8195 向后走 -0.2218
+-1.8195 向右转 -0.2218
+-1.8195 向左转 -0.2218
+-1.8195 巡逻 -0.2218
+
+\2-grams:
+-1.3424 <s> 背首诗 0.0000
+-1.3424 <s> 哈罗 0.0000
+-1.3424 <s> 讲个笑话 0.0000
+-1.3424 <s> 你好 0.0000
+-1.3424 <s> 你是谁 0.0000
+-1.3424 <s> 天气怎么样 0.0000
+-1.3424 <s> 往前走 0.0000
+-1.3424 <s> 向后走 0.0000
+-1.3424 <s> 向右转 0.0000
+-1.3424 <s> 向左转 0.0000
+-1.3424 <s> 巡逻 0.0000
+-0.3010 背首诗 </s> -0.3010
+-0.3010 哈罗 </s> -0.3010
+-0.3010 讲个笑话 </s> -0.3010
+-0.3010 你好 </s> -0.3010
+-0.3010 你是谁 </s> -0.3010
+-0.3010 天气怎么样 </s> -0.3010
+-0.3010 往前走 </s> -0.3010
+-0.3010 向后走 </s> -0.3010
+-0.3010 向右转 </s> -0.3010
+-0.3010 向左转 </s> -0.3010
+-0.3010 巡逻 </s> -0.3010
+
+\3-grams:
+-0.3010 <s> 背首诗 </s>
+-0.3010 <s> 哈罗 </s>
+-0.3010 <s> 讲个笑话 </s>
+-0.3010 <s> 你好 </s>
+-0.3010 <s> 你是谁 </s>
+-0.3010 <s> 天气怎么样 </s>
+-0.3010 <s> 往前走 </s>
+-0.3010 <s> 向后走 </s>
+-0.3010 <s> 向右转 </s>
+-0.3010 <s> 向左转 </s>
+-0.3010 <s> 巡逻 </s>
+
+\end\

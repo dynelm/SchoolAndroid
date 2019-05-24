@@ -1,0 +1,71 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar call;
+!slot <contact>;
+!slot <callPre>;
+!slot <callPhone>;
+!slot <callTo>;
+!slot <move>;
+!slot <someone>;
+!slot <goto>;
+!slot <somewhere>;
+!slot <date>;
+!slot <weather>;
+!slot <whatdate>;
+!slot <somewhere>;
+!slot <whatname>;
+!slot <poemauthor>;
+!slot <poem>;
+!slot <song>;
+!slot <songauthor>;
+!slot <singsong>;
+!slot <hi>;
+!slot <wheredishuiju>;
+!slot <where>;
+!slot <paytax>;
+!slot <corporate>;
+!slot <howold>;
+!slot <individual>;
+!slot <landusetax>;
+!slot <buildingtaxes>;
+!slot <vehicletax>;
+!slot <stamps>;
+!slot <delaytax>;
+!slot <banli>;
+!slot <yewu>;
+
+!start <callStart>;
+<callStart>:[<callPre>][<callTo>]<contact><callPhone>|[<callPre>]<callPhone>[<callTo>]<contact>|[<callPre>][<callTo>]<contact>|[向|往]<move>
+|[<somewhere>]<whatdate><weather>|<whatname>|[背首|背|来首][<poemauthor>][的]<poem>|[背首|背|来首][<poemauthor>][的诗|诗]|[背首|背|来首][的诗|诗]
+|[唱首|来首|唱一首][<songauthor>][的]<song>|<singsong>|<songauthor>|[唱首|来首|唱一首]<songauthor>[歌|的歌]|<hi>|[<callPre>]<callTo><contact>
+|[<somewhere>]<wheredishuiju><where>|<paytax>|<corporate>|<howold>|[我想知道|你能告诉我]<contact><where>|<individual>|<landusetax>
+|<buildingtaxes>|<vehicletax>|<stamps>|<delaytax>|[我想|去哪]<banli><yewu>;
+
+
+<contact>:大厅服务中心|一号窗口|二号窗口|三号窗口|四号窗口;
+<callPre>:我要|我想|我想要;
+<callPhone>:让你;
+<callTo>:带我去|去;
+<move>:向前走|前进|后退|左转|右转;
+<somewhere>:马鞍山|合肥|巢湖|上海|北京;
+<whatdate>:今天|明天|后天;
+<weather>:天气|天气怎么样|天气如何;
+<whatname>:你叫什么名字|自我介绍|介绍一下自己;
+<poemauthor>:李白|杜甫|白居易|陶渊明|王维|李商隐;
+<poem>:赠汪伦|静夜思|将进酒|春夜喜雨|春望;
+<singsong>:唱首歌|来一首歌|随便来一首歌;
+<songauthor>:刘德华|张学友|周杰伦;
+<song>:吻别|双截棍|冰雨;
+<hi>:你好|哈罗;
+<wheredishuiju>:地税局|地方税务局|税务局;
+<where>:地点|在哪|位置;
+<paytax>:缴纳税款的规定;
+<corporate>:企业所得税的纳税人|企业所得税的税率;
+<howold>:你今年几岁了|你今年多大了|能告诉我你的年龄么|你几岁了|多大了;
+<individual>:个人所得税的纳税人|个人所得税的征税范围|个人所得税的税率|个人所得税的计算公式;
+<landusetax>:土地使用税的纳税人|土地使用税的征税范围;
+<buildingtaxes>:房产税的纳税人|房产税的征税范围;
+<vehicletax>:车船税的纳税人|车船税的扣缴义务人;
+<stamps>:印花税的纳税人|印花税的征税范围;
+<delaytax>:延期申报的规定|延期申报的条件|办理延期申报的流程|怎么办理延期申报;
+<banli>:办理|资讯;
+<yewu>:个人所得税|企业所得税|印花税|车船税;

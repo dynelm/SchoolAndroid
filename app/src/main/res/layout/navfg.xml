@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Fuwutai"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/imasetWaypoint"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/setmap" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imasetWaypoint"
+        android:layout_marginBottom="31dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/imasetWaypoint"
+        android:text="设定导航点"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/WayPoint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Button"
+        android:layout_below="@+id/img_map"
+        android:layout_alignEnd="@+id/imasetWaypoint" />
+
+    <Button
+        android:id="@+id/WayPoint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/WayPoint1"
+        android:layout_alignBottom="@+id/WayPoint1"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/WayPoint1"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/WayPoint3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/WayPoint2"
+        android:layout_alignBottom="@+id/WayPoint2"
+        android:layout_toEndOf="@+id/textView6"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/WayPoint4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Button"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBaseline="@+id/WayPoint5"
+        android:layout_alignBottom="@+id/WayPoint5"
+        android:layout_alignEnd="@+id/First_Work" />
+
+    <Button
+        android:id="@+id/WayPoint5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Button"
+        android:layout_alignBaseline="@+id/WayPoint3"
+        android:layout_alignBottom="@+id/WayPoint3"
+        android:layout_toEndOf="@+id/WayPoint4" />
+
+
+    <ImageView
+        android:id="@+id/img_map"
+        android:layout_width="800dp"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/pingmian" />
+
+    <RelativeLayout
+        android:id="@+id/Four_Work"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignTop="@+id/textView6">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Three_Work"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/WayPoint1"
+        android:layout_alignStart="@+id/WayPoint1">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/First_Work"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Four_Work"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/Four_Work">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Secomd_Work"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/First_Work"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="45dp"
+        android:layout_toEndOf="@+id/First_Work">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/Three_Work"
+        android:layout_alignEnd="@+id/Secomd_Work"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+    <com.dynelm.robotdarttest.Util.DrawCircle
+        android:layout_width="800dp"
+        android:layout_height="400dp"
+        android:id="@+id/drawcicle"
+        android:background="@drawable/pingmian"/>
+
+    <ImageView
+        android:id="@+id/mf_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/face"
+        android:layout_alignBottom="@+id/Secomd_Work"
+        android:layout_toEndOf="@+id/img_map" />
+
+    <ImageView
+        android:id="@+id/mf_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/shiping_n"
+        android:layout_below="@+id/mf_face"
+        android:layout_toEndOf="@+id/img_map" />
+
+    <Button
+        android:id="@+id/btn_init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一键归位"
+        android:layout_marginStart="44dp"
+        android:layout_alignBaseline="@+id/WayPoint5"
+        android:layout_alignBottom="@+id/WayPoint5"
+        android:layout_toEndOf="@+id/WayPoint5" />
+
+    <Button
+        android:id="@+id/btn_Patrolling"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/daohangdianji"
+        android:text="巡逻"
+        android:layout_marginStart="65dp"
+        android:layout_alignBottom="@+id/btn_init"
+        android:layout_toEndOf="@+id/img_map" />
+
+    <Button
+        android:id="@+id/near_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_map"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/btn_init"
+        android:text="就近点初始化" />
+
+
+</RelativeLayout>
+

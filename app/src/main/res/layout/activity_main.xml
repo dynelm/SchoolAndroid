@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dynelm.robotdarttest.MainActivity"
+    android:background="@drawable/background">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/zhuyelayout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/zhuyedianji1"
+        android:layout_marginBottom="101dp"
+        android:layout_marginEnd="51dp"
+        android:layout_above="@+id/daohanglayout"
+        android:layout_alignEnd="@+id/imageView17" />
+
+    <ImageView
+        android:id="@+id/maplayout"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/WaveFormView"
+        android:background="@drawable/touming"
+        app:srcCompat="@drawable/face" />
+
+    <ImageView
+        android:id="@+id/daohanglayout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/daohang"
+        android:layout_marginBottom="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/zhuyelayout" />
+
+    <ImageView
+        android:id="@+id/videolayout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/shiping"
+        android:layout_alignTop="@+id/daohanglayout"
+        android:layout_alignStart="@+id/maplayout" />
+
+    <ImageView
+        android:id="@+id/img_dart"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/dart"
+        android:layout_alignBottom="@+id/Time_layout"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/Time_layout"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_toEndOf="@+id/Temp_layout"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/time" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/WhatTime"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:text="14:18周四"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:id="@+id/Temp_layout"
+        android:layout_marginStart="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/img_dart">
+
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/wendu" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度"
+                android:textSize="30sp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/WhatTem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7°C"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:id="@+id/PM_layout"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginEnd="49dp">
+
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/pm" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM2.5"
+                android:textSize="25sp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/WhatPM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56μg/m3"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主页"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/maplayout"
+        android:layout_toStartOf="@+id/imageView17" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人脸识别"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/maplayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="导航"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/videolayout"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginEnd="22dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/wifi"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textView3"
+        android:layout_marginEnd="19dp" />
+
+    <ImageView
+        android:id="@+id/img_setting"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/setting"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.dynelm.robotdarttest.Util.WaveformView
+        android:id="@+id/WaveFormView"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/zhuyelayout"
+        android:layout_alignLeft="@id/zhuyelayout" />
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:id="@+id/linearLayout">
+
+        <com.dynelm.robotdarttest.Util.BatteryView
+            android:id="@+id/battery"
+            android:layout_width="100dp"
+            android:layout_height="100dp"></com.dynelm.robotdarttest.Util.BatteryView>
+
+        <TextView
+            android:id="@+id/BatteryLeft"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="80%"
+            android:textColor="#fff127"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ceshhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Fragement_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="13dp"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/btn_stopsong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Time_layout" />
+
+    <TextView
+        android:id="@+id/Voice_spe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="语音识别内容"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/btn_stopsong"
+        android:layout_alignBottom="@+id/btn_stopsong"
+        android:layout_alignStart="@+id/Fragement_content" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/Temp_layout"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="13dp"
+        android:contentDescription="识别类型"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="工作模式"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="聊天模式"></RadioButton>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/Fragement_content"
+        android:layout_width="860dp"
+        android:layout_height="550dp"
+        android:layout_marginEnd="33dp"
+        android:layout_above="@+id/btn_ceshhi"
+        android:layout_toStartOf="@+id/zhuyelayout">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

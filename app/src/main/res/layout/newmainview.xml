@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/n_back">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/robot_n"
+        android:layout_below="@+id/Fragement_layout"
+        android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:id="@+id/Fragement_layout"
+        android:layout_width="1000dp"
+        android:layout_height="450dp"
+
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/back_area"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        >
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="1200dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/ntop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/click_area"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/Time_What"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="32dp"
+            android:text="16.21"
+            android:textColor="#57faff"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="马鞍山软件园"
+        android:textSize="40sp"
+        android:textColor="#FFFF00"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@drawable/charge"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignEnd="@+id/Fragement_layout" />
+
+    <ImageView
+        android:id="@+id/Main_Nav"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/Fragement_layout"
+        android:layout_below="@+id/Fragement_layout"
+        app:srcCompat="@drawable/bigroomguide" />
+
+    <ImageView
+        android:id="@+id/Main_Print"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/quenefornumber"
+        android:layout_below="@+id/Fragement_layout"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/Main_Ask"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/askforquestion"
+        android:layout_marginEnd="27dp"
+        android:layout_below="@+id/Fragement_layout"
+        android:layout_alignEnd="@+id/Fragement_layout" />
+
+    <WebView
+        android:id="@+id/n_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+    </WebView>
+
+    <Button
+        android:id="@+id/btn_closewv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="21dp"
+        android:layout_y="46dp"
+        android:background="@android:drawable/ic_delete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:id="@+id/show_pollart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/map_text"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="41dp"
+        android:layout_weight="1"
+        android:background="@drawable/touming"
+        android:text="地图构建"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        android:layout_above="@+id/ROS_MAP_START"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/ima_setmap"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/setmap"
+        android:layout_marginBottom="55dp"
+        android:layout_above="@+id/ima_savemap"
+        android:layout_alignStart="@+id/img_maptomain" />
+
+    <ImageView
+        android:id="@+id/ima_savemap"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/save"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/ima_setmap" />
+
+    <TextView
+        android:id="@+id/goujianditu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ima_setmap"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="51dp"
+        android:layout_toEndOf="@+id/ima_savemap"
+        android:text="点击构建地图"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ima_savemap"
+        android:layout_alignStart="@+id/goujianditu"
+        android:layout_marginBottom="46dp"
+        android:layout_marginStart="13dp"
+        android:text="点击保存地图"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/img_maptomain"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/back"
+        android:layout_marginStart="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="67dp" />
+
+    <Button
+        android:id="@+id/RosMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_maptomain"
+        android:layout_toEndOf="@+id/img_maptomain"
+        android:text="保存地图" />
+
+    <Button
+        android:id="@+id/ROS_MAP_START"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RosMap"
+        android:layout_alignBottom="@+id/RosMap"
+        android:layout_alignEnd="@+id/goujianditu"
+        android:text="开始建图" />
+</RelativeLayout>
+
